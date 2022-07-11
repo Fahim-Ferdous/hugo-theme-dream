@@ -43,7 +43,7 @@
           {{- .Title -}}
 
           {{ if .IsTranslated }}
-            <span class="lang">
+            <span class="translation">
               {{ range .Translations }}
                 <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
               {{ end }}

@@ -26,7 +26,7 @@
 
   {{ if and (gt .Site.Languages 1) (.Site.Params.showHeaderLanguageChooser | default true) }}
     {{- $language := .Language -}}
-    <span class="nav-lang">
+    <span class="langpicker">
     {{ range $.Site.Home.AllTranslations }}
       {{ if eq $language .Language }}
           <a href="{{ .Permalink }}" class="item active">{{ .Language.LanguageName }}</a>
